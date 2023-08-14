@@ -16,6 +16,11 @@
         <module>yujian-product</module>
         <module>yujian-user</module>
         <module>yujian-ware</module>
+        <module>yujian-common</module>
+        <module>yujian-third</module>
+        <module>yujian-gateway</module>
+        <module>yujian-auth-server</module>
+        <module>yujian-sso-server</module>
     </modules>
 
 </project>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Example</title>
+</head>
+<body>
+<h1 >欢迎：[[${session.loginUser}]]</h1>
+<ul>
+    <li th:each="user:${users}"> 姓名 [[${user}]]</li>
+</ul>
+</body>
+</html>

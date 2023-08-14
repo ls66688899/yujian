@@ -1,0 +1,29 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: UTF-8 #编码
+    suffix: .html # 模板后缀
+    mode: HTML5 #模板
+    servlet:
+      content-type: text/html
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://mysql-master.yujian:3306/yujian_user?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: yujian-user
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+server:
+  port: 8081
+
